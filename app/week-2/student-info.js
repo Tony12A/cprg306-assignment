@@ -10,7 +10,7 @@
           <p>
             GitHub Repository: {''}
             <Link href={githubRepoLink}>
-            Click for Github Link
+            Github Link
             </Link>
           </p>
         </div>
