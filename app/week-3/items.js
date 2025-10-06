@@ -1,12 +1,11 @@
-import Item from "./item-list"
-
-const Item = ({ name, quantity, category }) => {
+export default function Item({ name, quantity, category }) {
   return (
-    <li>
-      <h3>{name}</h3>
-      <p>quantity: {quantity}</p>
-      <p>category: {category}</p>
+    <li className="p-3 border-b border-gray-300 flex justify-between items-center">
+      <div>
+        <p className="font-semibold text-lg">{name}</p>
+        <p className="text-sm text-gray-600">in: {category}</p>
+      </div>
+      <p className="text-blue-600 font-medium">Buy: {quantity}</p>
     </li>
   );
-};
-
+}
