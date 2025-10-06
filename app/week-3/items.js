@@ -1,3 +1,4 @@
+
 export default function Item({ name, quantity, category }) {
   return (
     <li className="p-3 border-b border-gray-300 flex justify-between items-center">
