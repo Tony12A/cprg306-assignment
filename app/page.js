@@ -3,6 +3,7 @@ import Link from "next/link"
 export default function Page() {
   const week2 = "/week-2";
   const week3 = "/week-3";
+  const week4 = "/week-4";
 
  return (
  <main>
@@ -13,6 +14,10 @@ export default function Page() {
   <br></br>
   <Link href={week3}>
     Week-3
+  </Link>
+  <br></br>
+  <Link href={week4}>
+    Week-4
   </Link>
  </main>
  );
