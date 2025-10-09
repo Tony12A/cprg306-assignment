@@ -19,7 +19,7 @@ export default function NewItem() {
     e.preventDefault();
     const item = { name, quantity, category };
     console.log(item);
-    alert(`Item Added:\nName: ${name}\nQuantity: ${quantity}\nCategory: ${category}`);
+    alert(`Item added: ${name}, Quantity: ${quantity}, Category: ${category}`);
     setName("");
     setQuantity(1);
     setCategory("Produce");
