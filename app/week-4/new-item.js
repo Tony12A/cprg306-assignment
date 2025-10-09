@@ -13,7 +13,7 @@ export default function NewItem() {
   };
 
   return (
-    <div className="flex items-start justify-center min-h-screen bg-black pt-16">
+    <div className="flex items-start justify-center min-h-screen bg-white pt-16">
       <div className="flex items-center bg-white rounded-lg shadow-md p-2 space-x-2">
         <div className="px-4 py-1 border border-gray-300 rounded text-lg font-bold text-black">
           {quantity}
