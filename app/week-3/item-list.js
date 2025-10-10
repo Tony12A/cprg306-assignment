@@ -89,7 +89,7 @@ export default function ItemList() {
   ];
 
   return (
-    <ul className="bg-white rounded-2xl shadow-md divide-y divide-gray-200">
+    <ul>
       {items.map((item, index) => (
         <Item
           key={index}
