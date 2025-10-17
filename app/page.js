@@ -5,6 +5,8 @@ export default function Page() {
   const week3 = "/week-3";
   const week4 = "/week-4";
   const week5 = "/week-5";
+  const week6 = "/week-6";
+
  return (
  <main>
  <h1>"CPRG 306: Web Development 2 - Assignments"</h1>
@@ -22,6 +24,10 @@ export default function Page() {
   <br></br>
   <Link href={week5}>
     Week-5
+  </Link>
+  <br></br>
+  <Link href={week6}>
+    Week-6
   </Link>
  </main>
  );
