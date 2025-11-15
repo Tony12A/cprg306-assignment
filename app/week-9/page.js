@@ -1,15 +1,39 @@
+"use client";
+
+import Link from "next/link";
 import { useUserAuth } from "./_utils/auth-context";
 
-// Use the useUserAuth hook to get the user object and the login and logout functions
-const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+export default function Page() {
+  // Part 5: landing page starts
+  const { user, gitHubSignIn, firebaseSignOut: logOut } = useUserAuth();
 
-// Sign in to Firebase with GitHub authentication
-await gitHubSignIn();
+  return (
+    <main style={{ padding: "20px" }}>
+      {/* If the user is not logged in, show login button */}
+      {!user && (
+        <>
+          <h1>Welcome!</h1>
+          <button onClick={gitHubSignIn}>Login with GitHub</button>
+        </>
+      )}
 
-// Sign out of Firebase
-await firebaseSignOut();
+      {/* If the user is logged in, show welcome message */}
+      {user && (
+        <>
+          <p>
+            Welcome, {user.displayName} ({user.email})
+          </p>
 
-// Display some of the user's information
-<p>
-  Welcome, {user.displayName} ({user.email})
-</p>;
+          <button onClick={logOut}>Logout</button>
+
+          <br /><br />
+
+          <Link href="/week-9/shopping-list">
+            Go to Shopping List
+          </Link>
+        </>
+      )}
+      {/* Part 5: landing page ends */}
+    </main>
+  );
+}

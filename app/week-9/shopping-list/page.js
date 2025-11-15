@@ -5,7 +5,7 @@ import NewItem from "./new-item";
 import MealIdeas from "./meal-ideas";
 import itemsData from "./items.json";
 import { useState } from "react";
-import { useUserAuth } from "../../_utils/auth-context";
+import { useUserAuth } from "../_utils/auth-context";
 
 export default function Page() {
 

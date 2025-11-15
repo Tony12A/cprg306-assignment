@@ -1,6 +1,6 @@
 "use client";
 
-import Item from "./item";
+import Item from "./items";
 import { useState } from "react";
 
 export default function ItemList({itemsArray}) {
