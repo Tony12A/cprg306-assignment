@@ -19,7 +19,7 @@ export default function Page() {
       </main>
     );
   }
-
+  
   const [items, setItems] = useState(itemsData);
   const [selectedItemName, setSelectedItemName] = useState("");
 
