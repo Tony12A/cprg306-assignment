@@ -6,6 +6,9 @@ export default function Page() {
   const week4 = "/week-4";
   const week5 = "/week-5";
   const week6 = "/week-6";
+  const week7 = "/week-7";
+  const week8 = "/week-8";
+  const week9 = "/week-9";
 
  return (
  <main>
@@ -28,6 +31,18 @@ export default function Page() {
   <br></br>
   <Link href={week6}>
     Week-6
+  </Link>
+  <br></br>
+  <Link href={week7}>
+    Week-7
+  </Link>
+  <br></br>
+  <Link href={week8}>
+    Week-8
+  </Link>
+  <br></br>
+  <Link href={week9}>
+    Week-9
   </Link>
  </main>
  );
