@@ -33,7 +33,6 @@ export default function Page() {
           </Link>
         </>
       )}
-      {/* Part 5: landing page ends */}
     </main>
   );
 }
